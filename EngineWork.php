@@ -146,7 +146,7 @@ echo 'поднять четвертый поршень<br/>';
 $FourthCylinder->PistonMove();
 echo '<br/><br/>';
 }
-for($i=1;$i<20;$i++)
+for($i=1;;$i++)
 {
 	echo '<br/>Цикл №'.$i;
 	Driver();

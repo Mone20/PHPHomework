@@ -1,5 +1,5 @@
 <?php
-class Engine
+class Driver
 {
 var $PistonUp;
 var $FirstValveIsOpen;
@@ -31,13 +31,13 @@ function SecondValveMove()
 
 }
 }
-$FirstCylinder= new Engine();
-$SecondCylinder= new Engine();
-$ThirdCylinder= new Engine();
-$FourthCylinder= new Engine();
+$FirstCylinder= new Driver();
+$SecondCylinder= new Driver();
+$ThirdCylinder= new Driver();
+$FourthCylinder= new Driver();
 $FirstCylinder->PistonUp=true;
 $FourthCylinder->PistonUp=true;
-function Driver()
+function EngineWorks()
 {
 global $FirstCylinder;
 global $SecondCylinder;
@@ -149,7 +149,7 @@ echo '<br/><br/>';
 for($i=1;;$i++)
 {
 	echo '<br/>Цикл №'.$i;
-	Driver();
+	EngineWorks();
 	
 
 }
